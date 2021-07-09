@@ -33,4 +33,9 @@ pipelines:
           inputSteps:
             - name: mvn_build_step
           outputResources:
-            - name: mvn_build_info 
+            - name: mvn_build_info
+      - name: xrayScanStep
+        type: XrayScan
+        configuration:
+          inputResources:
+            - name: app_buildinfo 
