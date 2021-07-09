@@ -39,4 +39,4 @@ pipelines:
         type: XrayScan
         configuration:
           inputResources:
-            - name: app_buildinfo 
+            - name: mvn_build_info 
